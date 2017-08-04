@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h4>Select a csv file from your computer</h4>
+  <form action="upload" method="POST" enctype="multipart/form-data">
+    <div class="form-inline">
+      <div class="form-group">
+        <input type="file" name="file">
+      </div>
+      <button type="submit" value ="Upload" class="btn btn-sm btn-primary">Upload csv file</button>
+    </div>
+  </form>
+
+{% endblock %}

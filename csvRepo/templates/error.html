@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+
+/* Layout */
+.jumbotron {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  padding: 10px 0px;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+/* Colors */
+.green {color:#5cb85c;}
+.orange {color:#f0ad4e;}
+.red {color:#d9534f;}
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+</style>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1><i class="fa fa-frown-o red"></i> Sorry about that</h1>
+      <p class="lead">This app currently works with small csv files only<em></p>
+      <p><a href="/" class="btn btn-default btn-lg"><span class="green">Let's try that again</span></a>
+
+{% endblock %}
