@@ -16,19 +16,19 @@ cd to the directory where you saved the app. Ensure requirements.txt is in the s
 
 activate your virtual environment if you have not done so already
 
-#### run: *pip install -r requirements.txt*
+`pip install -r requirements.txt`
 
 ## FROM SCRATCH
 
 If you wish to have a clean start, there is a python script “firstrun.py” which will create your database and build the schema. This is included for convenience and to provide the option of a different database than the one provided. The app will work using either method. 
 
-run: *python firstrun.py*
+`python firstrun.py`
 
 The script is fast and will notify you that the SQL database has been created and you may now launch the app.
 
 ### LAUNCHING THE APP
 
-#### run: *python app.py*
+`python app.py`
 
 You are now ready to open your browser and head to the following URL:
 
@@ -54,13 +54,14 @@ You can navigate to the dashboard either by successfully loading a small csv fil
 
 For the coders, the data in the database can be accessed from the command line using sqlite3
 
-#### run: *sqlite csvtodbapp.db*
+`sqlite csvtodbapp.db`
 
 you can see the tables and schema with the following commands:
 
-#### run: *.tables*
-#### run: *.schema*
+`.tables`
+
+`.schema`
 
 For a quick query, you can run the following:
 
-#### run: *select * from csv_file where record_id=1;*
+`select * from csv_file where record_id=1;`
